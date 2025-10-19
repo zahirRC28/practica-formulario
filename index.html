@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica Formularios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Practica Formularios</h1>
+    </header>
+    <main>
+        <h2>Registro de Club</h2>
+        <form action="#" method="post" name="registro-club" class="registro">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <!-- Campo nombre -->
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required autofocus>
+            <!-- Campo apellido -->
+                <label for="apellido">apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+            <!-- Campo edad -->
+                <label for="edad">edad:</label>
+                <input type="number" id="edad" name="edad" min="18" max="100" required>
+            <!-- Campo Genero -->
+                <label for="genero">Genero:</label>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                <label for="masculino">feminino</label>
+                <input type="radio" id="otro" name="genero" value="otro" required>
+                <label for="masculino">otro</label>
+            <!-- Campo Afirmacion -->    
+                <label for="suscribir">Me siento del Club:</label>
+                <input type="checkbox" id="Afirmacion" name="Afirmacion" value="sí">
+            <!-- info sobre ti --> 
+                <label for="info">Cuéntanos sobre ti:</label>
+                <textarea id="informacion" name="informacion" rows="5" cols="30" placeholder="Escribe aqui"></textarea>  
+            </fieldset>
+            <fieldset>
+                <legend>Datos de Contacto</legend>
+            <!-- Campo de correo-->
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+            <!-- Campo de telefono-->    
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </fieldset>             
+            <!-- Campo enviar -->
+                <input type="submit" value="Enviar">
+                <button type="reset">Borrar</button>
+        </form>        
+
+        <h2>Registro de perdida</h2>
+        <form action="#" method="post" name="registro-perdida" class="perdida">
+            
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Practica Formularios</p>
+    </footer>
+</body>
+</html>
