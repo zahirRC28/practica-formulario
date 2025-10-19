@@ -27,11 +27,11 @@
             <!-- Campo Genero -->
                 <label for="genero">Genero:</label>
                 <input type="radio" id="masculino" name="genero" value="masculino" required tabindex="4">
-                <label for="masculino">Masculino</label>
+                <label for="masculino" class="genero">Masculino</label>
                 <input type="radio" id="feminino" name="genero" value="feminino" required tabindex="5">
-                <label for="masculino">feminino</label>
+                <label for="masculino" class="genero">feminino</label>
                 <input type="radio" id="otro" name="genero" value="otro" required tabindex="6">
-                <label for="masculino">otro</label>
+                <label for="otro" class="genero">Otro</label>
             <!-- Campo Afirmacion -->    
                 <label for="suscribir">Me siento del Club:</label>
                 <input type="checkbox" id="Afirmacion" name="Afirmacion" value="sí" tabindex="7">
@@ -43,12 +43,12 @@
                 <legend>Datos de Contacto</legend>
             <!-- Campo de correo-->
                 <label for="correo">Correo:</label>
-                <input type="email" id="correo" name="correo" required tabindex="9">
+                <input type="email" id="correo" name="correo" required tabindex="9" placeholder="example@example.com">
             <!-- Campo de telefono-->    
                 <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" required tabindex="10">
+                <input type="tel" id="telefono" name="telefono" required tabindex="10" placeholder="+34 123 456 789">
             </fieldset>             
-            <!-- Campo enviar -->
+            <!-- Campo enviar y borrar -->
                 <input type="submit" value="Enviar" tabindex="11">
                 <button type="reset" tabindex="12">Borrar</button>
         </form>        
@@ -90,7 +90,7 @@
                     </optgroup>
                 </select>
             <!-- Campo multiple -->
-                <label for="Accesorios">Accesorios</label>
+                <label for="Accesorios">Accesorios:</label>
                 <select id="Accesorios" name="Accesorios" multiple tabindex="6">
                     <option value="Ruedines">Ruedines</option>
                     <option value="Hinchadores">Hinchadores</option>
@@ -125,9 +125,10 @@
                 </datalist>
                 <label for="lugar">Marca de la bicileta:</label>
                 <input type="text" list="marcas" id="lugar" name="lugar" required tabindex="7">
-            <!-- Campo enviar -->
-                <input type="submit" value="Enviar" tabindex="8">
             </fieldset>
+            <!-- Campo enviar y borrar -->
+                <input type="submit" value="Enviar" tabindex="8">
+                <button type="reset" tabindex="12">Borrar</button>
         </form>
     </main>
     <footer>
